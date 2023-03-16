@@ -7,19 +7,19 @@ Oracle PLSQL Package for GSM 7bit with encode and decode functions.
 Examples :  
 
 ```
-SCKTOOL_CONV.GSM7BIT2ASCII('C769F3264C52414F27E8290D0E9945')
+TOOL_GSM7BIT.GSM7BIT2ASCII('C769F3264C52414F27E8290D0E9945')
 --------------------------------------------------------------------------------
 GSM7BIT ON ORACLE
 
-SCKTOOL_CONV.GSM7BIT2ASCII('E8329BFD4697D9EC37')
+TOOL_GSM7BIT.GSM7BIT2ASCII('E8329BFD4697D9EC37')
 --------------------------------------------------------------------------------
 hellohello
 
-SCKTOOL_CONV.ASCII2GSM7BIT('HELLOWORLD')
+TOOL_GSM7BIT.ASCII2GSM7BIT('HELLOWORLD')
 --------------------------------------------------------------------------------
 C8329BFD065DDF723619
 
-SCKTOOL_CONV.ASCII2GSM7BIT('GSM7BITONORACLE')
+TOOL_GSM7BIT.ASCII2GSM7BIT('GSM7BITONORACLE')
 --------------------------------------------------------------------------------
 C769F3264C52414F27E8290D0E9945
 ```
