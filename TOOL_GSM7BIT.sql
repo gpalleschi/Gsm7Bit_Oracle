@@ -67,6 +67,8 @@ CREATE OR REPLACE PACKAGE BODY TOOL_GSM7BIT AS
              appoBits := SUBSTR(ResultString,8*(i-1)+1,bitToExtr);
          END LOOP;
 
+         OctectString := OctectString || appoBits;
+
          -- SEPTET
          FOR i IN 1..LENGTH(OctectString)/7 LOOP
 --             AsciiString := AsciiString || '[' || SUBSTR(OctectString,7*(i-1)+1,7) || ']{' || CHR(bin2dec(SUBSTR(OctectString,7*(i-1)+1,7))) || ']';
@@ -122,3 +124,4 @@ END TOOL_GSM7BIT;
 --select scktool_conv.gsm7bit2ascii('CDB27C1C26BF9969BBBC0C') from dual;
 --select scktool_conv.gsm7bit2ascii('E8329BFD4697D9EC37') from dual;
 --select scktool_conv.ascii2gsm7bit('MercadoLivre') from dual;
+--select scktool_conv.ascii2gsm7bit('MIINFINITY') from dual;
